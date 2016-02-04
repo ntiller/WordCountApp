@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WordCountApp</string>
+    <string name="clear_button_text">Clear</string>
+    <string name="input_button_text">Input</string>
+    <string name="edittext_hint">Type something!! :(</string>
+    <string name="imageview_content_description">Image of an Android\'s head. It\'s not named Andy</string>
+    <string name="zero">0</string>
+
+
+    <string name="pokemon_text">My favorite Pokemon is %s, not %s</string>
+
+
+    <string-array name="pokemon">
+        <item>Bulbasaur</item>
+        <item>Ivysaur</item>
+        <item>Venusaur</item>
+    </string-array>
+</resources>

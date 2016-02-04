@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.lclark.wordcountapp.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/activity_main_buttonbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/activity_main_clear_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/clear_button_text"
+            style="@android:style/Widget.Material.Button.Borderless.Colored"
+            />
+
+
+        <Button
+            android:id="@+id/activity_main_input_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/input_button_text"
+            style="@android:style/Widget.Material.Button.Borderless.Colored"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/activity_main_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@id/activity_main_buttonbar"
+        android:hint="@string/edittext_hint"
+        android:inputType="textAutoComplete|textCapSentences|textAutoCorrect"
+        />
+
+    <ImageView
+        android:id="@+id/activity_main_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@android:mipmap/sym_def_app_icon"
+        android:contentDescription="@string/imageview_content_description"
+        />
+
+
+    <TextView
+        android:id="@+id/activity_main_count_textview"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/activity_main_edittext"
+        android:layout_below="@id/activity_main_imageview"
+        tools:background="@android:color/holo_blue_light"
+        />
+
+
+
+    <TextView
+        android:id="@+id/activity_main_copy_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/activity_main_edittext"
+        android:layout_below="@id/activity_main_imageview"
+        android:layout_toStartOf="@id/activity_main_count_textview"
+        tools:background="@android:color/holo_red_light"
+        />
+
+
+</RelativeLayout>
